@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+:root {
+  --primary-color: #333;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 11px 0;
+}
+
+p {
+  margin: 11px 0;
+}
+
+img {
+  width: 100%;
+}
+/* Nav Bar */
+.navbar {
+  background-color: var(--primary-color);
+  height: 75px;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+.navbar a {
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar h1 {
+  color: #fff;
+}
+
+/* Profile break-down */
+
+.profile-breakdown {
+  height: 450px;
+  background-color: #131313;
+  color: #fff;
+  position: relative;
+}
+
+.profile-breakdown h1 {
+  font-size: 45px;
+}
+
+.profile-breakdown p {
+  margin: 20px 0;
+}
+
+.profile-breakdown .grid {
+  grid-template-columns: 55% 45%;
+  gap: 35px;
+  overflow: visible;
+}
+
+.profile-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+}
+.profile-form .form-control {
+  margin: 30px 0;
+}
+
+.form-control input[type="text"],
+.form-control input[type="email"] {
+  border: 0;
+  border-bottom: 2px solid #b4becb;
+  width: 100%;
+  padding: 4px;
+  font-size: 1rem;
+}
+
+.form-control input:focus {
+  outline: none;
+}
+
+/* Utilities */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(45, 42, 204, 0.349);
+  padding: 5px 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  bottom: 10px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
